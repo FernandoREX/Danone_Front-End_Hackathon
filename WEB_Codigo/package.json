@@ -1,0 +1,22 @@
+{
+  "name": "danone_eco",
+  "version": "1.0.0",
+  "description": "crear un posible subdominio de Danone para promocionar su gama de",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch src/scss:build/css ",
+    "dev": "gulp dev "
+  },
+  "keywords": [
+    "SASS",
+    "Gulp"
+  ],
+  "author": "Fernando Rosas Gomez",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.63.4"
+  }
+}

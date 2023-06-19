@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danone Eco</title>
+    <link rel="stylesheet" href="build/css/app.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Quattrocento+Sans:wght@400;700&family=Ysabeau:ital,wght@0,100;0,400;0,700;1,200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="contenido-header">
+            <a href="index.html">
+                <img src="imagenes/logoDa.png" alt="logo de Danone" class="img_nav">
+            </a>
+            <nav class="nav_principal">
+                <a href="caloriasD.html" class="nav_link">Objetivos Saludables</a>
+                <a href="#" class="nav_link">Delicias Danone</a>
+                <a href="usuario.html" class="nav_link marco_derecha">Inicio de Sesion</a>
+                <a href="#" class="nav_link marco_izquierda">Registrarte</a>
+                <form action="/buscar" method="get">
+                    <input type="text" name="q" placeholder="Buscar Productos..." />
+                    <button type="submit">
+                        <img src="/WEB_Codigo/imagenes/logoBuscar.png" alt="logo de buscar">
+                    </button>
+                </form>
+                  
+            </nav>
+            
+        </div>
+    </header>
+
+    <div class="video">
+        <div class="titulo">
+            <div class="titulo_principal contenedor">
+                <h1>¡Bienvenido al mundo de Danone!</h1>
+                <h2>"Nutrición para el cuerpo, amor para el planeta: alimenta tu bienestar, nutre nuestro hogar."</h2>
+
+            </div>
+        </div>
+        <video autoplay muted loop>
+            <source src="videos/p5.mp4" type="video/mp4">
+            <source src="videos/p5.webm" type="video/webm">
+        </video>
+    </div>
+
+    <main class="Introduccion">
+        <div class="contenedor ">
+            <div class="Introduccion__Inicio">
+                <h2>¡Mundo Danone!</h2>
+                <p>
+                    Bienvenido al mundo de Danone! En nuestra página web, te invitamos a 
+                    explorar un universo de nutrición y bienestar. Descubre nuestra amplia 
+                    gama de productos nutritivos y deliciosos que te ayudarán a alcanzar 
+                    tus metas de salud y disfrutar de un estilo de vida equilibrado. 
+                    Desde yogures con ingredientes naturales hasta bebidas refrescantes, 
+                    cada uno de nuestros productos ha sido cuidadosamente elaborado para 
+                    brindarte calidad, sabor y nutrición en cada momento.
+                </p>
+                <p>
+                    Queremos ser tu compañero en este viaje hacia una vida más saludable 
+                    y sostenible. Únete a nuestra comunidad en línea, donde podrás encontrar 
+                    apoyo, inspiración y recursos para mantener tu bienestar físico y 
+                    mental. Participa en desafíos, comparte tus logros y conecta con personas 
+                    que comparten tus mismas metas.
+                </p>
+                <p>
+                    En Danone, creemos que la nutrición y el cuidado del planeta van de 
+                    la mano. Por eso, te invitamos a explorar nuestra página web, descubrir 
+                    nuevas recetas, aprender sobre alimentación saludable y encontrar 
+                    productos que se adapten a tus necesidades y preferencias. 
+                    ¡Empecemos juntos este viaje hacia una vida saludable y sostenible!
+                </p>
+            </div>
+            <div class="Introduccion__Informacion">
+                
+                <div class="Introduccion__Informacion--dereccha">
+                    <img src="imagenes/correr.png" alt="">
+                </div>
+                <div class="Introduccion__Informacion--izquierda">
+                    <h2>Objetivos Saludables</h2>
+                    <p>
+                        Optimiza tu estilo de vida saludable con nuestra página de 
+                        configuración de calorías diarias. Aquí podrás establecer tu 
+                        límite máximo de calorías y tomar el control de tu ingesta diaria. 
+                        Con nuestro sencillo formulario, podrás ingresar la cantidad de 
+                        calorías que deseas consumir como máximo en un día, permitiéndote 
+                        alcanzar tus objetivos nutricionales de manera efectiva. 
+                        ¡Comienza a vivir en equilibrio y disfruta de una alimentación 
+                        consciente!
+                    </p>
+                    <div class="botoon">
+                        <button class="creative-button" onclick="redirectToPage('caloriasD.html')">
+                            <span class="button-text">¡Crear limite calorico!</span>
+                            <span class="button-bg"></span>
+                        </button>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+
+            <div class="Introduccion__Informacion">
+                <div class="Introduccion__Informacion--izquierda">
+                    <h2>Delicias Danone</h2>
+                    <p>
+                        Explora nuestro extenso catálogo de productos de Danone, donde 
+                        encontrarás una amplia variedad de opciones deliciosas y saludables. 
+                        Desde yogures cremosos hasta bebidas refrescantes, nuestro catálogo 
+                        te ofrece productos que se adaptan a tus necesidades y estilo de 
+                        vida. Descubre la calidad y el sabor excepcionales que nos 
+                        caracterizan en cada uno de nuestros productos. ¡Déjate tentar y 
+                        disfruta de una experiencia culinaria única!"
+                    </p>
+                    <div class="botoon">
+                        <button class="creative-button">
+                            <span class="button-text">¡Explora las delicias Danone!</span>
+                            <span class="button-bg"></span>
+                        </button>
+                    </div>
+                    
+                </div>
+                <div class="Introduccion__Informacion--dereccha">
+                    <img src="imagenes/producto.png" alt="">
+                </div>
+            </div>
+
+            
+            <div class="Introduccion__Informacion">
+                
+                <div class="Introduccion__Informacion--dereccha">
+                    <img src="imagenes/comunidad.png" alt="">
+                </div>
+                <div class="Introduccion__Informacion--izquierda">
+                    <h2>Nuestra Cominidad Danone</h2>
+                    <p>
+                        Personaliza tu experiencia en Danone con nuestra página de perfil del 
+                        usuario. Aquí podrás acceder a tu perfil personalizado, donde 
+                        encontrarás información clave, como tu límite máximo de calorías 
+                        diarias y tus preferencias por productos con una menor huella 
+                        ecológica. Te brindamos la libertad de adaptar y ajustar estos 
+                        parámetros según tus necesidades y objetivos. ¡Controla tu bienestar 
+                        y haz elecciones informadas para una vida más saludable y sostenible!
+                    </p>
+                    <div class="botoon">
+                        <button class="creative-button" onclick="redirectToPage('registarte.html')">
+                            <span class="button-text">¡Unete a la comunidad!</span>
+                            <span class="button-bg"></span>
+                        </button>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="Animacion">
+            <div class="contenedor footer__Con">
+                <div class="patrocinador">
+                    <h3>Patrocinadores</h3>
+                    <div class="logo-container">
+                        <img src="imagenes/logoDa.png" alt="Logo 1">
+                        <img src="imagenes/logoPersonal.png" alt="Logo 2">
+                    </div>
+                </div>
+                <div class="credits">
+                    <p>
+                        Nutrición y sostenibilidad en un solo lugar: descubre el proyecto 
+                        Danone, donde encontrarás productos saludables, información sobre 
+                        bienestar y nuestro compromiso con el cuidado del planeta. ¡Únete 
+                        a nosotros en este viaje hacia un estilo de vida equilibrado y 
+                        sustentable!
+                    </p>
+                    <a href="#top" class="scroll-button">Volver arriba</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="build/JS/direccion_botones.js"></script>
+</body>
+</html>

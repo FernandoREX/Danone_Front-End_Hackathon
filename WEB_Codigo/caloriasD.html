@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danone Eco</title>
+    <link rel="stylesheet" href="build/css/app.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Quattrocento+Sans:wght@400;700&family=Ysabeau:ital,wght@0,100;0,400;0,700;1,200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="contenido-header">
+            <a href="index.html">
+                <img src="imagenes/logoDa.png" alt="logo de Danone" class="img_nav">
+            </a>
+            <nav class="nav_principal">
+                <a href="caloriasD.html" class="nav_link">Objetivos Saludables</a>
+                <a href="#" class="nav_link">Delicias Danone</a>
+                <a href="usuario.html" class="nav_link marco_derecha">Inicio de Sesion</a>
+                <a href="#" class="nav_link marco_izquierda">Registrarte</a>
+                <form action="/buscar" method="get">
+                    <input type="text" name="q" placeholder="Buscar Productos..." />
+                    <button type="submit">
+                        <img src="/WEB_Codigo/imagenes/logoBuscar.png" alt="logo de buscar">
+                    </button>
+                </form>
+                  
+            </nav>
+            
+        </div>
+    </header>
+
+    <div class="fondo">
+        <main class="Introduccion_Cuestionario">
+            <form id="calorie-form">
+                <div class="contenedor">
+                    <h1>Calculadora de Calorías</h1>
+                    <div>
+                        <label for="gender">Género:</label>
+                        <select id="gender" name="gender">
+                        <option value="male">Masculino</option>
+                        <option value="female">Femenino</option>
+                        </select>
+                    </div>
+        
+                    <div>
+                        <label for="age">Edad:</label>
+                        <input type="number" id="age" name="age" min="1" max="120" required>
+                    </div>
+        
+                    <div>
+                        <label for="weight">Peso (kg):</label>
+                        <input type="number" id="weight" name="weight" min="1" required>
+                    </div>
+        
+                    <div>
+                        <label for="height">Altura (cm):</label>
+                        <input type="number" id="height" name="height" min="1" required>
+                    </div>
+        
+                    <div>
+                        <label for="activity-level">Nivel de actividad:</label>
+                        <select id="activity-level" name="activity-level">
+                            <option value="sedentary">Sedentario (poco o ningún ejercicio)</option>
+                            <option value="lightly-active">Ligeramente activo (ejercicio ligero/deporte 1-3 días/semana)</option>
+                            <option value="moderately-active">Moderadamente activo (ejercicio moderado/deporte 3-5 días/semana)</option>
+                            <option value="very-active">Muy activo (ejercicio duro/deporte 6-7 días/semana)</option>
+                            <option value="super-active">Súper activo (ejercicio muy duro/deporte y trabajo físico diario)</option>
+                        </select>
+                    </div>
+        
+                    <div>
+                        <label for="goal">Objetivo:</label>
+                        <select id="goal" name="goal">
+                            <option value="lose-weight">Perder peso</option>
+                            <option value="maintain-weight">Mantener peso</option>
+                            <option value="gain-weight">Ganar peso</option>
+                        </select>
+                    </div>
+        
+                    <button type="submit">Calcular</button>
+                </div>
+                
+            </form>
+    
+            <div class="imagen__C">
+                <img src="imagenes/correr.png" alt="Imagen de correr">
+            </div>
+        </main>
+    
+        <article>
+    
+            <div class="carousel-container">
+                <h2>Recomendaciones sanas de Danone</h2>
+                <div class="carousel">
+                  <div class="recipe">
+                    <h3>Smoothie de frutas con yogur Activia</h3>
+                    <ul>
+                      <li>Ingredientes:</li>
+                      <li>1 plátano maduro</li>
+                      <li>1 taza de fresas frescas</li>
+                      <li>1 taza de yogur Activia natural</li>
+                      <li>1 cucharada de semillas de chía</li>
+                      <li>1 taza de hielo</li>
+                    </ul>
+                    <p>Instrucciones:</p>
+                    <ol>
+                      <li>En una licuadora, agrega el plátano, las fresas, el yogur Activia, las semillas de chía y el hielo.</li>
+                      <li>Mezcla todos los ingredientes hasta obtener una consistencia suave y homogénea.</li>
+                      <li>Sirve en un vaso y disfruta.</li>
+                    </ol>
+                    <p>Información nutricional por porción:</p>
+                    <ul>
+                      <li>Calorías: 220</li>
+                      <li>Proteínas: 10g</li>
+                      <li>Grasas: 4g</li>
+                      <li>Carbohidratos: 38g</li>
+                      <li>Fibra: 8g</li>
+                    </ul>
+                  </div>
+                
+                  <div class="recipe">
+                    <h3>Ensalada de pollo con aderezo de yogur Oikos</h3>
+                    <ul>
+                      <li>Ingredientes:</li>
+                      <li>2 pechugas de pollo a la parrilla, cortadas en trozos</li>
+                      <li>Mezcla de lechugas frescas (lechuga romana, espinacas, rúcula)</li>
+                      <li>1 tomate cortado en cubos</li>
+                      <li>1/2 pepino cortado en rodajas</li>
+                      <li>1/4 de cebolla roja en rodajas finas</li>
+                      <li>2 cucharadas de yogur Oikos natural</li>
+                      <li>1 cucharada de jugo de limón</li>
+                      <li>Sal y pimienta al gusto</li>
+                    </ul>
+                    <p>Instrucciones:</p>
+                    <ol>
+                      <li>En un tazón grande, mezcla las lechugas, el tomate, el pepino y la cebolla roja.</li>
+                      <li>En otro tazón pequeño, mezcla el yogur Oikos, el jugo de limón, la sal y la pimienta para hacer el aderezo.</li>
+                      <li>Agrega el pollo a la ensalada y rocía con el aderezo de yogur.</li>
+                      <li>Mezcla todo suavemente y sirve.</li>
+                    </ol>
+                    <p>Información nutricional por porción:</p>
+                    <ul>
+                      <li>Calorías: 320</li>
+                      <li>Proteínas: 40g</li>
+                      <li>Grasas: 8g</li>
+                      <li>Carbohidratos: 20g</li>
+                      <li>Fibra: 4g</li>
+                    </ul>
+                  </div>
+                
+                  <div class="recipe">
+                    <h3>Parfait de yogur Danonino con frutas y granola</h3>
+                    <ul>
+                      <li>Ingredientes:</li>
+                      <li>1 envase de yogur Danonino sabor fresa</li>
+                      <li>1/4 taza de arándanos frescos</li>
+                      <li>1/4 taza de rodajas de plátano</li>
+                      <li>2 cucharadas de granola sin azúcar añadida</li>
+                    </ul>
+                    <p>Instrucciones:</p>
+                    <ol>
+                      <li>En un vaso o tazón, agrega una capa de yogur Danonino.</li>
+                      <li>Añade una capa de arándanos y rodajas de plátano sobre el yogur.</li>
+                      <li>Espolvorea la granola encima.</li>
+                      <li>Repite las capas hasta llenar el vaso o tazón.</li>
+                      <li>Disfruta como desayuno o como snack saludable.</li>
+                    </ol>
+                    <p>Información nutricional por porción:</p>
+                    <ul>
+                      <li>Calorías: 180</li>
+                      <li>Proteínas: 5g</li>
+                      <li>Grasas: 3g</li>
+                      <li>Carbohidratos: 32g</li>
+                      <li>Fibra: 4g</li>
+                    </ul>
+                  </div>
+
+                  <p>
+                    Si quieres tener mas privilegios con "Mundo Danone" registrate en 
+                    nuestro programa de miembros
+                </p>
+                <a href="" class="scroll-button centrar">registrate Ahora!</a>
+                </div>
+                
+              </div>
+              
+    
+        </article>
+    </div>
+    
+
+    <footer>
+        <div class="Animacion">
+            <div class="contenedor footer__Con">
+                <div class="patrocinador">
+                    <h3>Patrocinadores</h3>
+                    <div class="logo-container">
+                        <img src="imagenes/logoDa.png" alt="Logo 1">
+                        <img src="imagenes/logoPersonal.png" alt="Logo 2">
+                    </div>
+                </div>
+                <div class="credits">
+                    <p>
+                        Nutrición y sostenibilidad en un solo lugar: descubre el proyecto 
+                        Danone, donde encontrarás productos saludables, información sobre 
+                        bienestar y nuestro compromiso con el cuidado del planeta. ¡Únete 
+                        a nosotros en este viaje hacia un estilo de vida equilibrado y 
+                        sustentable!
+                    </p>
+                    <a href="#top" class="scroll-button">Volver arriba</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="build/JS/formulario.js"></script>
+</body>
+</html>

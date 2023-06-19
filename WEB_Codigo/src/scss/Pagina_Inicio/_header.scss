@@ -1,0 +1,107 @@
+@use '../base/variables' as V;
+
+.contenido-header{
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15rem;
+    padding-top: 2rem;
+    img{
+        width: 18rem;
+    }
+    width: 100%;
+    margin-top: -1.5rem;
+
+    background: rgba(27, 27, 27, 0.37);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.6px);
+    -webkit-backdrop-filter: blur(9.6px);
+}
+
+.nav_principal{
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    font-size: 1.4rem;
+    a{
+        font-family: V.$FuenteS;
+        color: V.$Blanco;
+    }
+    
+    form{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        img{
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        button {
+            border: none;
+            padding: 0;
+            background: none;
+            margin: 0;
+            cursor: pointer;
+        }
+        input{
+            background: rgba(0, 132, 255, 0.185);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(13.6px);
+            -webkit-backdrop-filter: blur(13.6px);
+            border: 1px solid rgba(0, 133, 255, 1);
+            flex: 1;
+            border: 0;
+            outline: none;
+            padding: 1rem 3rem;
+        }
+        ::placeholder{
+            color: V.$Blanco;
+        }
+    }
+}
+header{
+   display: flex;
+   justify-content: center; 
+    
+}
+video{
+    position: relative;
+    width: 100%;
+    display: block;
+    z-index: -1;
+}
+
+.video{
+    max-height: 70rem;
+    overflow: hidden;
+    
+}
+
+.titulo{
+    z-index: 1;
+    position: absolute;
+    max-height: 70rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h2 {
+        font-size: 3rem;
+        color: #FFFFFF;
+        font-weight: 400;
+        text-shadow: 2px 2px 3px black;
+    }
+    h1 {
+        font-size: 5rem;
+        color: #FFFFFF;
+        font-weight: 700;
+        text-shadow: 2px 2px 3px black;
+    }
+      
+}

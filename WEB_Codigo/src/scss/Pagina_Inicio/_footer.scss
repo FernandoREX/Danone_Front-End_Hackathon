@@ -1,0 +1,51 @@
+@use '../base/variables' as V;
+
+.footer__Con{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 15rem;
+    color: V.$Blanco;
+    h3{
+        font-size: 3rem;
+    }
+    p{
+        font-size: 1.4rem;
+        color: V.$Blanco;
+    }
+}
+
+.scroll-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3e64ff;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .scroll-button:hover {
+    background-color: #1c36b9;
+  }
+
+.Animacion{
+    padding-top: 10rem;
+    background: rgb(35,185,237);
+    background: linear-gradient(180deg, rgba(35,185,237,1) 0%, rgba(0,236,250,1) 10%, rgba(0,29,133,1) 100%);
+    .logo-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        img{
+            width: 20rem;
+        }
+    }
+    .patrocinador{
+        h3{
+            text-align: center;
+        }
+    }
+}
+

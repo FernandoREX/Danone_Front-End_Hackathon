@@ -1,0 +1,72 @@
+@use '../base/variables' as V;
+
+.fondo{
+    background: rgb(23,255,245);
+    background: linear-gradient(163deg, rgba(23,255,245,1) 0%, rgba(0,116,215,1) 51%, rgba(0,189,255,1) 97%);
+    margin-top: -20rem;
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+}
+
+.carousel-container {
+    color: V.$Blanco;
+    width: 80%;
+    margin: 0 auto;
+    p{
+        color: V.$Blanco;
+    }
+    h2{
+        margin-top: 3rem;
+        text-align: center;
+    }
+  }
+  
+  .carousel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .recipe {
+    width: 30%;
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .recipe h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .recipe ul, .recipe ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .recipe p {
+    margin-bottom: 5px;
+  }
+  
+  .recipe ul li, .recipe ol li {
+    margin-bottom: 5px;
+  }
+  
+  .recipe p:last-child, .recipe ul:last-child, .recipe ol:last-child {
+    margin-bottom: 0;
+  }
+  
+  .scroll-button {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  .centrar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

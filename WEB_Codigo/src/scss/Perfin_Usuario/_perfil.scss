@@ -1,0 +1,125 @@
+@use '../base/variables' as V;
+
+.Imagen__Portada{
+    img{
+        width: 100%;  
+        margin-top: -15rem;  
+        
+    }
+    max-height: 50rem;  
+}
+
+.Perfi_Info{
+    z-index: 6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: -1rem;
+    margin-top: -25rem;
+    .Informacion{
+        padding: 5rem;
+        padding-top: 15rem;
+        background-color: palevioletred;
+        width: 50%;
+    }
+    .Datos_Info{
+        padding: 3rem;
+        background-color: rgb(170, 77, 108);
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.FotoPerfil{
+    
+    img{
+        margin-top: -25rem;
+        border-radius: 60rem;
+        width: 20rem;
+        position: absolute;
+        margin-left: 5rem;
+    }
+}
+
+.Informacion{
+    margin: auto;
+    color: V.$Blanco;
+    h2{
+        font-size: 5rem;
+    }
+    p{
+        color: V.$Blanco;
+        margin-top: -4rem;
+    }
+    ul{
+        color: V.$Blanco;
+        font-size: 1.5rem;
+        margin-top: -4rem;
+    }
+}
+
+.Datos_Info{
+    p,h1,h2{
+        color: V.$Blanco;
+    }
+}
+
+
+// Estilos SCSS para la publicación
+
+.post {
+    p,h2{
+        color: V.$Blanco;
+    }
+    color: V.$Blanco;
+    background: rgba(131, 10, 109, 0.356);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(131, 10, 109, 0.123);
+    padding: 10px;
+    margin-bottom: 10px;
+    
+    .author-info {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      
+      img {
+        width: 8rem;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+      
+      h2 {
+        margin-top: 3rem;
+        font-size: 3rem;
+        font-weight: bold;
+      }
+    }
+    
+    p {
+      margin-bottom: 10px;
+    }
+    
+    img {
+      max-width: 100%;
+      margin-bottom: 10px;
+    }
+    
+    .interactions {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+      
+      p {
+        font-size: 14px;
+        
+        &.comment-count, &.like-count {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  

@@ -1,0 +1,149 @@
+@use '../base/variables' as V;
+
+.Introduccion_Cuestionario{
+    padding-top: 2rem;
+    margin-top: 15rem;
+    padding-bottom: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20rem;
+    img{
+        width: 30rem;
+    }
+}
+
+// Estilos generales
+$azulPrimario: #3498db;
+$blanco: #ffffff;
+
+// Estilos del formulario
+.Introduccion_Cuestionario {
+  padding: 2rem;
+  text-align: center;
+
+  h1 {
+    color: V.$Blanco;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    div {
+      margin-bottom: 1rem;
+      width: 100%;
+
+      label {
+        color: V.$Blanco;
+        font-weight: 200;
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+        display: block;
+      }
+
+      input,
+      select {
+        width: 100%;
+        padding: 0.5rem;
+        font-size: 1rem;
+      }
+    }
+
+    button {
+      background-color: $blanco;
+      color: V.$AzulObs;
+      border: none;
+      border-radius: 2rem;
+      padding: 1rem 2rem;
+      font-size: 1.5rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out;
+
+      &:hover {
+        background-color: lighten(V.$AzulDan, 10%);
+        color: V.$Blanco;
+      }
+    }
+  }
+}
+
+// Animación del botón al hacer clic
+button {
+  transform: scale(1);
+  transition: transform 0.5s ease-in-out;
+
+  &:active {
+    transform: scale(1.0);
+  }
+}
+
+.imagen__C {
+    position: relative;
+    animation: moveUpDown 2s infinite alternate;
+  }
+  
+  @keyframes moveUpDown {
+    0% {
+      top: 0;
+    }
+    50% {
+      top: 2rem;
+    }
+    100% {
+      top: 0;
+    }
+  }
+  
+.result{
+    background: rgba(0, 123, 255, 0.57);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.9px);
+    -webkit-backdrop-filter: blur(5.9px);
+    padding: 1rem;
+
+    position: absolute;
+    p{
+        color: V.$Blanco;
+    }
+
+    color: V.$Blanco;
+    h2{
+        margin-bottom: 2rem;
+    }
+    
+}
+
+.diets-container{
+    .diet{
+        h3{
+            margin-bottom: 0rem;
+        }
+        ul{
+            color: V.$AzulObs;
+            list-style-type: none;
+        }
+    }
+}
+
+.close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  font-size: 18px;
+  color: #fff;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.close-button:hover {
+  transform: scale(1.2);
+}
+
